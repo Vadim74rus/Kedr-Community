@@ -16,10 +16,10 @@ bot.on('message',   async (msg) => {
   const text = msg.text;
 
   if(text === '/start') {
-      await bot.sendMessage(chatId,'Ниже появится кнопка', {
+      await bot.sendMessage(chatId,'Для продолжения нажмите кноку ниже!', {
           reply_markup: {
               inline_keyboard: [
-                  [{text: 'TESTS', web_app: {url: webAppUrl}}]
+                  [{text: 'KEDR Community', web_app: {url: webAppUrl}}]
               ]
           }
       })
